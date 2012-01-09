@@ -47,16 +47,15 @@ public class CustomListView extends ListView{
     	public void handleMessage(Message msg)
     	{
     		super.handleMessage(msg);
-
-
+    		
     		switch(msg.what)
     		{
     		case SINGLE_TAP:
-    			Log.i(TAG, "Entry");
+    			Log.i(TAG, "Single tap entry");
     			 mOnDoubleTapListener.OnSingleTap(mParent, mView, mPosition, mId);
     			 break;
     		case DOUBLE_TAP:
-    			Log.i(TAG, "Entry");
+    			Log.i(TAG, "Double tap entry");
     			 mOnDoubleTapListener.OnDoubleTap(mParent, mView, mPosition, mId);
     			break;
     		}
