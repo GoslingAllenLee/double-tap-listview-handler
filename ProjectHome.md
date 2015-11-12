@@ -1,0 +1,1 @@
+Implementation of double tap listview items using Handler and Message in Android
